@@ -3,53 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CRUD Operation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="first-div">
-      <h1>To-Do-List CRUD</h1>
-    </div>
-    <span class="both-div">
+    <div class="main">
       <div class="main-div">
-        <input
-          class="input-class"
-          type="text"
-          placeholder="    Enter here..."
-        />
-        <button class="btn-class">Add</button>
+        <h1>CRUD Operation</h1>
+
+        <div>
+          <input
+            class="input-class"
+            type="text"
+            id="input"
+            placeholder="    Enter task..."
+          />
+          <button class="btn-class" onclick="addTask()">Add</button>
+        </div>
+
+        <ul class="ul" id="ul"></ul>
       </div>
+    </div>
 
-      <ul class="ul"></ul>
-    </span>
-    <!-- <script src="app.js"></script> -->
-    <script>
-      document.querySelector("button").addEventListener("click", function () {
-        let input = document.querySelector("input").value;
-        // input.value = "";
-
-        let li = document.createElement("p");
-        li.classList.add("p");
-        li.innerText = input;
-
-        let ul = document.querySelector("ul");
-        ul.appendChild(li);
-
-        let det = document.createElement("button");
-        det.classList.add("det-class");
-        det.innerText = "Delete";
-        li.appendChild(det);
-
-        let update = document.createElement("button");
-        update.classList.add("update-class");
-        update.innerText = "Update";
-        li.appendChild(update);
-
-        let detBut = document.querySelector(".det-class").addEventListener("click",function(){
-            
-        })
-
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
