@@ -1,7 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
-  padding: 50px;
+  padding: 0px;
   background-color: #393646;
   color: orange;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .shot {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-class {
+    width: 50px;
+
+    margin-left: 10px;
+  }
+  ul{
+    padding: 40px;
+  }
+}
+
+h1 {
+  color: orangered;
+  padding-bottom: 60px;
 }
 
 .input-class {
@@ -11,12 +46,12 @@ body {
   border-radius: 30px;
   border: none;
   color: whitesmoke;
-  padding: 5px;
   font-size: 20px;
 }
 
 .btn-class {
-  height: 48px;
+  height: 37px;
+  width: 48px;
   border: none;
   border-radius: 30px;
   background-color: #b0a4a4;
@@ -27,7 +62,11 @@ body {
   color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: 540;
+  
   /* border: 1px solid black; */
+}
+p{
+  padding: 7px;
 }
 
 .main-div {
